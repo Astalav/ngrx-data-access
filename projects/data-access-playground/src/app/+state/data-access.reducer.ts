@@ -25,23 +25,23 @@ export const reducer = createReducer(
     }),
   ),
 
-  // same as:
-  on(DataAccessActions.sameData.load, state => ({
-    ...state,
-    loading: true,
-    loaded: false,
-  })),
-  on(DataAccessActions.sameData.success, (state, action) => ({
-    ...state,
-    loading: false,
-    loaded: true,
-    randomDataName: action.data,
-  })),
-  on(DataAccessActions.sameData.error, (state) => ({
-    ...state,
-    loading: false,
-    loaded: false,
-  })),
+  // // same as:
+  // on(DataAccessActions.sameData.load, state => ({
+  //   ...state,
+  //   loading: true,
+  //   loaded: false,
+  // })),
+  // on(DataAccessActions.sameData.success, (state, action) => ({
+  //   ...state,
+  //   loading: false,
+  //   loaded: true,
+  //   randomDataName: action.data,
+  // })),
+  // on(DataAccessActions.sameData.error, (state) => ({
+  //   ...state,
+  //   loading: false,
+  //   loaded: false,
+  // })),
 
 );
 

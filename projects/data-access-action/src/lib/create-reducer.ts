@@ -7,7 +7,7 @@ export function createDataAccessReducer<stateType, T extends object, U extends o
   successReducer: (state: stateType, action: U & TypedAction<string>) => stateType,
 ): On<stateType>[] {
   return [
-    on(dataAccessAction.load, (state: stateType) => ({
+    on(dataAccessAction.execute, (state: stateType) => ({
       ...state,
       loading: true,
       loaded: false

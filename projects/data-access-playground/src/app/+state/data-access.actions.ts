@@ -9,9 +9,9 @@ export const data = createDataAccessAction(
   props<{data: object}>(),
 );
 
-// same as
-export const sameData = {
-  load: createAction(`${feature} Data LOAD`, props<{param: string}>()),
-  success: createAction(`${feature} Data SUCCESS`, props<{data: object}>()),
-  error: createAction(`${feature} Data ERROR`, props<{error: string}>()),
-};
+// // same as
+// export const sameData = {
+//   execute: createAction(`${feature} Data EXECUTE`, props<{param: string}>()),
+//   success: createAction(`${feature} Data SUCCESS`, props<{data: object}>()),
+//   error: createAction(`${feature} Data ERROR`, props<{error: string}>()),
+// };

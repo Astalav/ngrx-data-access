@@ -10,7 +10,7 @@ export function createDataAccessAction<T extends object, U extends object>(
   successProps: propType<U>,
 ): DataAccessAction<T, U> {
   return {
-    load: createAction(`${actionName} LOAD`, loadProps),
+    execute: createAction(`${actionName} EXECUTE`, loadProps),
     success: createAction(`${actionName} SUCCESS`, successProps),
     error: createAction(`${actionName} ERROR`, props<{error: string}>()),
   };
