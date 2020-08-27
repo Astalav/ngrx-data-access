@@ -6,5 +6,18 @@
 */
 {
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "./projects/data-access-action/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/data-access-action/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/data-access-playground/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/data-access-playground/tsconfig.spec.json"
+    }
+]
 }
